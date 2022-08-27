@@ -3,7 +3,7 @@ class Book < ApplicationRecord
 
   contract('Book_producer', 'Book::Contracts::V1') do
     fields_to_synchronize do |_payload|
-      %w[first_name last_name email state]
+      %w[title author]
     end
   end
 end
