@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: book-consumer-ingress
+spec:
+  rules:
+   - host: hello-world2.info
+     http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: book-consumer-service
+                port: 
+                  number: 4000
