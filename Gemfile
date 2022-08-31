@@ -28,7 +28,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 
-gem 'erp-data-sync', path: '../erp-data-sync'
+gem 'erp-data-sync', git: 'https://volo-h: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@github.com/volo-h/erp-data-sync', branch: 'main'
 
 gem 'redis', '4.7.1'
 gem 'sidekiq'
